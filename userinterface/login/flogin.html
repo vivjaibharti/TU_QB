@@ -1,26 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Faculty Login</title>
-    <link href="/tuqb/css/flogin.css" rel="stylesheet">
-    <style>
-        #img1 {
-            width: 125px;
-            height: 125px;
-            margin-top: 2px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faculty Login</title>
+  <link href="/tuqb/css/flogin.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: rgb(76, 69, 69);">
-
-        
-
-    <script src="/tuqb/jquery/jquery.js"></script>
-    <script src="/tuqb/userinterface/login/flogin.js"></script>
+<body>
+  <div class="mainDiv">
+    <div class="innerDiv">
+      <div class="logo">
+        <img src="/tuqb/userinterface/login/tu_logo_approved.png" alt="TU_Logo" class="img1" />
+      </div>
+      <form action="" method="post">
+        <div class="labels">
+          <label for="userid" style="font-family: Georgia; font-weight: Bold">
+            UserId
+          </label>
+        </div>
+        <div>
+          <input type="text" name="userid" id="userid" placeholder="Enter Your UserId">
+        </div>
+        <div class="labels">
+          <label for="password" style="font-family: Georgia; font-weight: Bold">
+            Password
+          </label>
+        </div>
+        <div>
+          <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <div id="login">
+          <input type="button" value="Login">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/tuqb/jquery/jquery.js"></script>
+  <script src="/tuqb/userinterface/login/flogin.js"></script>
 </body>
 
 </html>
