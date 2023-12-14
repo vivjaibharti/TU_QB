@@ -2,40 +2,76 @@
   margin: 0;
   padding: 0;
 }
-.mainDiv{
-    width: 100%;
-    height: 100vh;
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: centre;
-    background-color:rgb(76, 69, 69);
+.mainDiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-content: center; */
+  justify-content: center;
+  background-color: rgb(76, 69, 69);
+  align-items: center;
+  /* justify-items: center; */
 }
 .innerDiv {
-  width:100%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 450px;
   height: 300px;
   border: 2px solid burlywood;
   border-radius: 4px;
   background-color: crimson;
   box-sizing: border-box;
-  margin: auto;
-  padding: 5px;
-  /* display: flex;
-  justify-content: centre; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: centre; */
+  /* justify-items: center; */
+  /* justify-content: center; */
 }
 .logo {
-    display:flex;
-    margin:auto;
-    padding:5px;
-    flex-wrap:wrap;
-    /* align-content: centre; */
-    justify-content: center;
+  display: flex;
+  padding: 5px;
+  /* flex-wrap: wrap; */
+  /* align-content: centre; */
+  justify-content: center;
+  /* justify-items: center; */
 }
 .img1 {
-  width: 80px;
+  max-width: 80px;
   height: 80px;
-  margin-top: 2px;
+}
+
+ #form1 {
   display: flex;
-  /* justify-content: centre; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelsDiv{
+  margin:5px;
+}
+
+.inputboxDiv{
+  display:flex;
+  justify-content: center;
+  width:100%;
+  /* background-color: blue; */
+}
+
+#loginbtnDiv{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+}
+
+#loginbtn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 20);
+}
+
+#signupDiv{
+  display:flex;
+  justify-content: center;
+  width:100%;
 }
