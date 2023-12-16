@@ -14,14 +14,14 @@
       <div class="logo">
         <img src="/tuqb/userinterface/login/tu_logo_approved.png" alt="TU_Logo" class="img1" id="img1" />
       </div>
-      <form action="" method="post" class="form1" id="form1">
+      <form action="" method="POST" class="form1" id="form1">
         <div class="labelsDiv">
           <label for="userid" style="font-family: Georgia; font-weight: Bold">
             UserId
           </label>
         </div>
         <div class="inputboxDiv">
-          <input type="text" name="userid" id="userid" placeholder="Enter Your UserId" style="width:80%;height: 25px;">
+          <input type="text" name="userid" id="userid" placeholder="Enter Your UserId" style="width:80%;height: 25px;" required>
         </div>
         <div class="labelsDiv">
           <label for="password" style="font-family: Georgia; font-weight: Bold">
@@ -29,14 +29,17 @@
           </label>
         </div>
         <div class="inputboxDiv">
-          <input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 80%;height: 25px;">
+          <input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 80%;height: 25px;" required>
         </div>
         <div id="loginbtnDiv">
-          <input type="button" value="Login" style="background-color: aqua;  border-radius: 5px;padding: 5px;" id="loginbtn">
+          <button type="submit" style="background-color: aqua;  border-radius: 5px;padding: 5px;" id="loginbtn" >LOGIN</button>
         </div>
       </form>
       <div class="signupDiv" id="signupDiv">
         <a href="/tuqb/userinterface/signup/fsignup.html">New User?? Sign UP</a>
+      </div>
+      <div class="loginError" style="display: flex; justify-content: center;">
+        <label id="errorMsg"></label>
       </div>
     </div>
   </div>

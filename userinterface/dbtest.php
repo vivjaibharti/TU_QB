@@ -15,7 +15,7 @@ class dbConnectionClass
             $this->conn=new PDO("mysql:host=$this->serverName;port=$this->port;dbname=$this->dbName",$this->userName,$this->password);
 
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // echo "Connected successfully";
+            echo "Connected successfully";
         }
         catch(PDOException $e)
         {
@@ -24,3 +24,5 @@ class dbConnectionClass
     }
 
 }
+
+$db=new dbConnectionClass();
