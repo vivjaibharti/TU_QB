@@ -19,8 +19,16 @@ if ($action == "floginajax") {
     //print_r($result);
 
     if (!empty($result) && $result["f_id"] == $f_id && $result["password"] == $password) {
+        $cmd = "select f_id,name,gender,dep_id,sch_id,email_id from faculty_details where f_id='" . $f_id . "';";
+        $ps = $db->conn->prepare($cmd);
+        $ps->execute();
+        $result = $ps->fetch(PDO::FETCH_ASSOC); 
         session_start();
         $_SESSION["f_id"]=$result["f_id"];
+        $_SESSION["name"]=$result["name"];
+        $_SESSION["dep_id"]=$result["dep_id"];
+        $_SESSION["sch_id"]=$result["sch_id"];
+        $_SESSION["email_id"]=$result["email_id"];
         $rv = array("Status" => "OK");
         header('Content-Type: application/json');
         echo json_encode($rv);

@@ -3,7 +3,7 @@ $(document).ready(function(){
         e.preventDefault();
         var userid=$("#userid").val();
         var password=$("#password").val();
-        alert(userid+password);
+        // alert(userid+password);
 
         $.ajax({
             url:"/tuqb/phpajaxhandler/loginajax.php",
@@ -11,13 +11,13 @@ $(document).ready(function(){
             datatype:"json",
             data:{"f_id":userid,"password":password,"action":"aloginajax"},
             beforeSend:function(){
-                alert("About to send an ajax call.");
+                // alert("About to send an ajax call.");
                 //alert(username+password);
             },
             success:function(result){
                 //console.log(result);
-                alert(result);
-                console.log("Ajax handled Successful.");
+                // alert(result);
+                // console.log("Ajax handled Successful.");
                 if (result.Status=="OK") {
                     document.location.replace('/tuqb/userinterface/home/home.php');
                 } 
@@ -41,7 +41,7 @@ $(document).ready(function(){
         e.preventDefault();
         var userid=$("#userid").val();
         var password=$("#password").val();
-        alert(userid+password);
+        // alert(userid+password);
 
         $.ajax({
             url:"/tuqb/phpajaxhandler/loginajax.php",
@@ -49,13 +49,13 @@ $(document).ready(function(){
             datatype:"json",
             data:{"f_id":userid,"password":password,"action":"floginajax"},
             beforeSend:function(){
-                alert("About to send an ajax call.");
+                // alert("About to send an ajax call.");
                 //alert(username+password);
             },
             success:function(result){
                 //console.log(result);
-                alert(result);
-                console.log("Ajax handled Successful.");
+                // alert(result);
+                // console.log("Ajax handled Successful.");
                 if (result.Status=="OK") {
                     document.location.replace('/tuqb/userinterface/home/home.php');
                 } 
