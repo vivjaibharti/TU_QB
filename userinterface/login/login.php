@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Faculty Login</title>
-  <link href="/tuqb/css/flogin.css" rel="stylesheet" />
+  <title>Login</title>
+  <link href="/tuqb/css/login.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,11 +32,12 @@
           <input type="password" name="password" id="password" placeholder="Enter Your Password" style="width: 80%;height: 25px;" required>
         </div>
         <div id="loginbtnDiv">
-          <button type="submit" style="background-color: aqua;  border-radius: 5px;padding: 5px;" id="loginbtn" >LOGIN</button>
+          <button type="submit" style="background-color: aqua;  border-radius: 5px;padding: 5px;" id="aloginbtn" class="loginbtn">Admin Login</button>
+          <button type="submit" style="background-color: aqua;  border-radius: 5px;padding: 5px;" id="floginbtn" class="loginbtn" >Faculty Login</button>
         </div>
       </form>
       <div class="signupDiv" id="signupDiv">
-        <a href="/tuqb/userinterface/signup/fsignup.html">New User?? Sign UP</a>
+        <a href="/tuqb/userinterface/forget_pwd/forget_pwd.php">Forget Password?? Click Here</a>
       </div>
       <div class="loginError" style="display: flex; justify-content: center;">
         <label id="errorMsg"></label>
@@ -44,7 +45,7 @@
     </div>
   </div>
   <script src="/tuqb/jquery/jquery.js"></script>
-  <script src="/tuqb/userinterface/login/flogin.js"></script>
+  <script src="/tuqb/userinterface/login/login.js"></script>
 </body>
 
 </html>

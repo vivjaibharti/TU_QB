@@ -11,6 +11,7 @@
   justify-content: center;
   background-color: rgb(76, 69, 69);
   align-items: center;
+  background-image: url("/tuqb/userinterface/login/tu_cse_dept.jpeg");
   /* justify-items: center; */
 }
 .innerDiv {
@@ -63,10 +64,14 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 5px;
+  margin: 5px 20px;
 }
 
-#loginbtn:hover {
+#loginbtnDiv button {
+  margin: 0 50px; /* Adjust the margin to increase/decrease space between buttons */
+}
+
+.loginbtn:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 20);
 }
 
