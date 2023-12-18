@@ -1,3 +1,18 @@
+<?php
+    session_start();
+    if(isset($_SESSION["f_id"]))
+    {
+        $f_id=$_SESSION["f_id"];
+    }
+    else
+    {
+        echo "Error:Please login First";
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +23,7 @@
 <body>
     <h1>This is home page..</h1>
     <?php
-        print_r($_POST);
+    echo "<br>".$_SESSION["f_id"];
     ?>
 </body>
 </html>

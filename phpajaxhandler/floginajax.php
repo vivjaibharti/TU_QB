@@ -19,11 +19,15 @@ if ($action == "floginajax") {
     //print_r($result);
 
     if (!empty($result) && $result["f_id"] == $f_id && $result["password"] == $password) {
+        session_start();
+        $_SESSION["f_id"]=$result["f_id"];
         $rv = array("Status" => "OK");
         header('Content-Type: application/json');
         echo json_encode($rv);
     } else {
         // $rv = array("Status" => "NOT OK", "server_data" => "Invalid Username/Password", "css_property" => "style='color:black;display:flex;justify-content:center'");
+        session_start();
+        session_destroy();
         $rv=array("Status"=>"NOT OK");
         header('Content-Type: application/json');
         echo json_encode($rv);
