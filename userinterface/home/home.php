@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION)) {
+if (isset($_SESSION["f_id"])) {
     $f_id = $_SESSION["f_id"];
     $name = $_SESSION["name"];
     $dep_id = $_SESSION["dep_id"];
@@ -8,6 +8,7 @@ if (isset($_SESSION)) {
     $email_id = $_SESSION["email_id"];
 } else {
     echo "Error:Please login First";
+    exit;
 }
 
 ?>

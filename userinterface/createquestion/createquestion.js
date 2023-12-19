@@ -2,7 +2,7 @@ var id=1;
 const questionContainer=document.getElementById("questionContainer");
 
 $(document).ready(function(){
-  alert("Jquery");
+  // alert("Jquery");
   var q1div = $('<div>');
   q1div.attr("id", "q"+id);
   q1div.attr("class","questionDiv")
@@ -110,7 +110,7 @@ $(document).ready(function(){
 
           $("#"+qInputContainerId).append(addBtn);
         }
-        
+
         });
 
 });
